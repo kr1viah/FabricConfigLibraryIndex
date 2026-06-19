@@ -23,18 +23,18 @@ public class OneConfig extends ConfigLibrary {
 
 		exampleConfigClass = """
 public class TestConfig extends Config {
-    public static TestConfig INSTANCE = new TestConfig();
+	public static TestConfig INSTANCE = new TestConfig();
 
-    @Checkbox(title = "checkbox", description = "I do checkboxes", category = "bob")
-    public static boolean checkbox = false;
-    @Slider(title = "Slide", min = 10f, max = 110f, icon = "assets/oneconfig/ico/paintbrush.svg", description = "I do sliding", category = "bob")
-    public static float p = 50f;
-    @Text(title = "Text")
-    public static String text = "Hello world!";
+	@Checkbox(title = "checkbox", description = "I do checkboxes", category = "bob")
+	public static boolean checkbox = false;
+	@Slider(title = "Slide", min = 10f, max = 110f, icon = "assets/oneconfig/ico/paintbrush.svg", description = "I do sliding", category = "bob")
+	public static float p = 50f;
+	@Text(title = "Text")
+	public static String text = "Hello world!";
 
-    public TestConfig() {
-        super("test_mod.json", "Test Mod", Category.QOL);
-    }
+	public TestConfig() {
+		super("test_mod.json", "Test Mod", Category.QOL);
+	}
 }
 """;
 	}

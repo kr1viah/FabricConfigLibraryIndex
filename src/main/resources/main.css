@@ -1,9 +1,9 @@
 html, body {
-    background: #1e1e2e;
-    color: #cdd6f4;
-    font-family: helvetica, serif;
-    text-align: left;
-    font-size: 125%;
+	background: #1e1e2e;
+	color: #cdd6f4;
+	font-family: helvetica, serif;
+	text-align: left;
+	font-size: 125%;
 }
 
 .hidden {
@@ -11,73 +11,73 @@ html, body {
 }
 
 a {
-    color: #89b4fa
+	color: #89b4fa
 }
 
 code {
-    background: #11111b;
-    border-style: solid;
-    border-color: #6c7086;
-    border-radius: 10px;
-    border-width: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-    color: #a6adc8;
+	background: #11111b;
+	border-style: solid;
+	border-color: #6c7086;
+	border-radius: 10px;
+	border-width: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	color: #a6adc8;
 }
 
 .tag {
-    background: #11111b;
-    border-style: solid;
-    border-color: #6c7086;
-    border-radius: 10px;
-    display: inline-block;
-    margin-left: 3px;
-    border-width: 2px;
-    margin-bottom: 3px;
-    color: #a6adc8;
-    user-select: none;
+	background: #11111b;
+	border-style: solid;
+	border-color: #6c7086;
+	border-radius: 10px;
+	display: inline-block;
+	margin-left: 3px;
+	border-width: 2px;
+	margin-bottom: 3px;
+	color: #a6adc8;
+	user-select: none;
 }
 
 span.tag.active h6 {
-    background: #a6adc8;
-    color: #11111b;
+	background: #a6adc8;
+	color: #11111b;
 }
 
 .hoverable {
-    color: #cba6f7;
-    text-decoration: underline dotted;
-    cursor: help;
+	color: #cba6f7;
+	text-decoration: underline dotted;
+	cursor: help;
 }
 
 .panel {
-    background: #181825;
-    border-style: solid;
-    border-color: #6c7086;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 3px;
+	background: #181825;
+	border-style: solid;
+	border-color: #6c7086;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 3px;
 }
 
 p {
-    margin-bottom: 0
+	margin-bottom: 0
 }
 
 .sidebar {
 }
 
 h4 {
-    margin-top: 0;
-    margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .codeSamp {
-    margin-top: 8px;
-    font-family: monospace;
-    color: #cba6f7;
-    background-color: #11111b;
-    padding: 3px;
-    margin: 2px;
-    padding-right: 1em;
-    border-left: 3px solid #cba6f7;
-    overflow: scroll;
+	margin-top: 8px;
+	font-family: monospace;
+	color: #cba6f7;
+	background-color: #11111b;
+	padding: 3px;
+	margin: 2px;
+	padding-right: 1em;
+	border-left: 3px solid #cba6f7;
+	overflow: scroll;
 }

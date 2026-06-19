@@ -31,29 +31,29 @@ public class Configs implements IConfigHandler {
 		);
 	}
 
-    @Override
-    public void load() {
-        if (Files.exists(CONFIG_FILE) && Files.isReadable(CONFIG_FILE)) {
-            JsonElement element = JsonUtils.parseJsonFile(CONFIG_FILE);
+	@Override
+	public void load() {
+		if (Files.exists(CONFIG_FILE) && Files.isReadable(CONFIG_FILE)) {
+			JsonElement element = JsonUtils.parseJsonFile(CONFIG_FILE);
 
-            if (element != null && element.isJsonObject()) {
-                JsonObject root = element.getAsJsonObject();
+			if (element != null && element.isJsonObject()) {
+				JsonObject root = element.getAsJsonObject();
 
-                ConfigUtils.readConfigBase(root, "main", Configs.ConfigClass.OPTIONS);
-            }
-        } else {
-            System.err.println("load(): Failed to load config file " + CONFIG_FILE.toAbsolutePath());
-        }
-    }
+				ConfigUtils.readConfigBase(root, "main", Configs.ConfigClass.OPTIONS);
+			}
+		} else {
+			System.err.println("load(): Failed to load config file " + CONFIG_FILE.toAbsolutePath());
+		}
+	}
 
-    @Override
-    public void save() {
+	@Override
+	public void save() {
 		JsonObject root = new JsonObject();
 
 		ConfigUtils.writeConfigBase(root, "main", Configs.ConfigClass.OPTIONS);
 
 		JsonUtils.writeJsonToFile(root, CONFIG_FILE);
-    }
+	}
 }
 """;
 	}
