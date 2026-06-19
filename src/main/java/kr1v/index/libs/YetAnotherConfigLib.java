@@ -12,7 +12,7 @@ public class YetAnotherConfigLib extends ConfigLibrary {
 		modrinthSlug = "yacl";
 		type = Type.BOTH;
 		dependencies = List.of(Dependency.FABRIC_API);
-		extraConfigTypes = List.of(ConfigType.BUTTON);
+		extraConfigTypes = List.of(ConfigType.BUTTON, ConfigType.COLOR, ConfigType.DROPDOWN);
 		extraFeatures = List.of();
 		configFormats = List.of(ConfigFormat.JSON, ConfigFormat.JSON5);
 		manualInitialization = InitMode.YES;
