@@ -18,8 +18,8 @@ public record ConfigMethod(TypeOfClass typeOfClass, MemberType memberType, List<
 		INSTANCE("instance members"),
 		STATIC("static members"),
 		EITHER("static or instance members"),
-		NONE("")
-		;
+		NONE("");
+
 		public final String description;
 		MemberType(String description) {
 			this.description = description;

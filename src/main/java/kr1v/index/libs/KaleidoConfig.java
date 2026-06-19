@@ -23,7 +23,7 @@ public class KaleidoConfig extends ConfigLibrary {
 
 		exampleConfigClass = """
 public class ExampleModConfig extends ReflectiveConfig {
-    public final TrackedValue<Boolean> exampleBoolean = this.value("Example boolean");
+	public final TrackedValue<Boolean> exampleBoolean = this.value("Example boolean");
 }""";
 	}
 }

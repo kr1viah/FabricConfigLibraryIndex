@@ -35,7 +35,7 @@ public class AxolotlClientConfig extends ConfigLibrary {
 						// create a root category. For automatic modmenu integration this must be named the same as your mod's modid.
 						var exampleCategory = OptionCategory.of("example-category");
 						exampleCategory.add(exampleBoolean);
-				
+
 						// versioned
 						var currentVersion = 1;
 						var configManager = new VersionedJsonConfigManager(configPath, exampleCategory, currentVersion,
@@ -44,7 +44,7 @@ public class AxolotlClientConfig extends ConfigLibrary {
 							});
 						// unversioned
 						//var configManager = new JsonConfigManager(configPath, exampleCategory);
-				
+
 						// register the config
 						AxolotlClientConfig.register(configManager);
 						// The config will not load automatically.
