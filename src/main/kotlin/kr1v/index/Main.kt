@@ -487,6 +487,11 @@ fun main() {
                                 href = "https://kr1v.net/libs/facts"
                                 +"View facts"
                             }
+                            br
+                            a {
+                                href = "https://github.com/kr1viah/FabricConfigLibraryIndex"
+                                +"Github repo"
+                            }
                         }
                         div {
                             +("Total libraries: " + Libraries.CONFIG_LIBRARIES().size)
