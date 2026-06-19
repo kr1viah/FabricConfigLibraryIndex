@@ -4,8 +4,7 @@ public enum Type {
 	LOADER(true, false),
 	UI(false, true),
 	BOTH(true, true),
-	UNKNOWN(false, false),
-	;
+	UNKNOWN(false, false);
 
 	public final boolean loader;
 	public final boolean ui;

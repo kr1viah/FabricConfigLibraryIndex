@@ -1,0 +1,16 @@
+# EditorConfig is awesome: https://editorconfig.org
+
+root = true
+
+[*]
+end_of_line = lf
+
+[*.{kts?,java,css,js}]
+charset = utf-8
+indent_style = tab
+
+[*.yml]
+charset = utf-8
+indent_style = space
+indent_size = 2
+

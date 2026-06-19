@@ -4,8 +4,7 @@ public enum Side {
 	CLIENT(true, false),
 	SERVER(false, true),
 	BOTH(true, true),
-	UNKNOWN(false, false),
-	;
+	UNKNOWN(false, false);
 
 	public final boolean client;
 	public final boolean server;

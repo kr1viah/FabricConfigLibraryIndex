@@ -24,15 +24,15 @@ public class OffsetUtils538 extends ConfigLibrary {
 		exampleConfigClass = """
 public final class ConfigClass implements Config {
 	public boolean exampleBoolean = false;
-                                       
+
 	@Override
 	public Path getConfigDirPath() {
 		return FabricLoader.getInstance().getConfigDir().resolve("offsetutils538-example");
 	}
-	
+
 	@Override
 	public String getId() {
-	    return "offsetutils538-example/main";
+		return "offsetutils538-example/main";
 	}
 }
 """;
