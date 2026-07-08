@@ -117,14 +117,14 @@ function getMeow() {
 
 function getThing() {
 	const i = Math.random()
-	if (i > 0.4) {
+	if (i > 0.64) {
 		return getMeow()
 	}
-	if (i > 0.35) {
-		return "pu" + "r".repeat(2 + Math.floor(Math.random() * 4))
+	if (i > 0.4) {
+		return "ny" + "a".repeat(1 + Math.floor(Math.random() * 7))
 	}
 	if (i > 0.3) {
-		return "ny" + "a".repeat(1 + Math.floor(Math.random() * 7))
+		return "pu" + "r".repeat(2 + Math.floor(Math.random() * 4))
 	}
 	if (i > 0.15) {
 		return randarr(emojies)
