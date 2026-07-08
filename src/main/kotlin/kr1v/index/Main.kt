@@ -384,7 +384,6 @@ fun main() {
 			}
 			body {
 				style = "font-size: 13px; color: #cdd6f4; margin: 0px; display: flex; height: 100%"
-				attributes["onload"] = "onLoad();"
 
 				div("sidebar") {
 					style = "flex: 1; display: flex; flex-direction: column; padding: 10px"
@@ -503,10 +502,7 @@ fun main() {
 							}
 							tag(
 								"Meow!",
-								onClickStr = """
-								const el = document.getElementById("meow-panel");
-								el.style.display = el.style.display === "none" ? "block" : "none";
-								""".trimIndent(),
+								onClickStr = "initMeow();",
 								spanStyle = "display: inline-block; cursor: pointer;"
 							)
 						}

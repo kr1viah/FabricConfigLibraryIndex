@@ -132,10 +132,16 @@ function getThing() {
 	return getMoewEmoji()
 }
 
-function onLoad() {
+function initMeow() {
 	const meowPanel = document.getElementById("meow-panel");
+	meowPanel.style.display = meowPanel.style.display === "none" ? "block" : "none";
+
+	if (meowPanel.innerHTML !== "") {
+		return
+	}
+
 	let meow = ""
-	for (let i = 0; i < 100; ++i) {
+	for (let i = 0; i < 40000; ++i) {
 		meow += getThing() + ' '
 	}
 	meowPanel.innerHTML = meow;
