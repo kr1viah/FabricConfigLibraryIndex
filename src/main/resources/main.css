@@ -81,3 +81,11 @@ h4 {
 	border-left: 3px solid #cba6f7;
 	overflow: scroll;
 }
+
+.meow-fill {
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjcwIiB2aWV3Qm94PSIwIDAgODggMTUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHN0eWxlPi5waW5rIHsgZm9udDogaXRhbGljIDAuM2VtIHNlcmlmOyBmaWxsOiBwaW5rOyB9PC9zdHlsZT48dGV4dCB4PSIwIiB5PSIwIiBkeT0iMCIgY2xhc3M9InBpbmsiPjx0c3BhbiB4PSIwIiBkeT0iNCI+OjMgbXJyYW93IG55YWF+ICZndDt+Jmx0OyBhd2F3YSA6MyBwdXJycn48L3RzcGFuPjx0c3BhbiB4PSIwIiBkeT0iNSI+bXJycnAgOjMgbWV3byBtb3Jld34gbWlhdXV1IG1ycnJwPC90c3Bhbj48dHNwYW4geD0iMCIgZHk9IjUiPm1yYW93IG1pYXc6MyBtZXdvYW1lb3d3IG1pYW91OjM8L3RzcGFuPjwvdGV4dD48L3N2Zz4K");
+	background-repeat: repeat;
+	flex: 1;
+	min-height: 12px;
+}
+

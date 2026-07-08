@@ -493,9 +493,26 @@ fun main() {
 								+"Github repo"
 							}
 						}
+
 						div {
-							+("Total libraries: " + Libraries.CONFIG_LIBRARIES().size)
+							style = "height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: end;"
+							p {
+								style = "margin: 0"
+								+("Total libraries: " + Libraries.CONFIG_LIBRARIES().size)
+							}
+							tag(
+								"Meow!",
+								onClickStr = """
+								const el = document.getElementById("meow-panel");
+								el.style.display = el.style.display === "none" ? "block" : "none";
+								""".trimIndent(),
+								spanStyle = "display: inline-block; cursor: pointer;"
+							)
 						}
+					}
+
+					div("panel meow-fill") {
+						attributes["id"] = "meow-panel"
 					}
 				}
 
