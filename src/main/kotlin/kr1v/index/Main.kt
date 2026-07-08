@@ -384,6 +384,7 @@ fun main() {
 			}
 			body {
 				style = "font-size: 13px; color: #cdd6f4; margin: 0px; display: flex; height: 100%"
+				attributes["onload"] = "onLoad();"
 
 				div("sidebar") {
 					style = "flex: 1; display: flex; flex-direction: column; padding: 10px"
@@ -511,7 +512,8 @@ fun main() {
 						}
 					}
 
-					div("panel meow-fill") {
+					div("panel meow-panel") {
+						style = "display: none"
 						attributes["id"] = "meow-panel"
 					}
 				}
