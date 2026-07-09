@@ -502,16 +502,14 @@ fun main() {
 							}
 							tag(
 								"Meow!",
-								onClickStr = """
-								const el = document.getElementById("meow-panel");
-								el.style.display = el.style.display === "none" ? "block" : "none";
-								""".trimIndent(),
+								onClickStr = "initMeow();",
 								spanStyle = "display: inline-block; cursor: pointer;"
 							)
 						}
 					}
 
-					div("panel meow-fill") {
+					div("panel meow-panel") {
+						style = "display: none"
 						attributes["id"] = "meow-panel"
 					}
 				}

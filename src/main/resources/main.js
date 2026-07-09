@@ -76,3 +76,74 @@ function filterPanels() {
 		panel.style.display = visible ? '' : 'none';
 	});
 }
+
+const meowBegin = ['m']
+const meowContinuation = ['e', 'o', 'a', 'r', 'p', 'w']
+const meowEnding = ['w', 'r']
+
+const meowFaceyEyes = [
+	['>', '<'],
+	['^', '^'],
+	['U', 'U'],
+	['O', 'O'],
+	['@', '@']
+]
+const meowFaceyMouth = ['~', '-', 'w', 'u', '..']
+
+const emojies = [':3', ':D', 'x3', 'c:']
+
+function randarr(array) {
+	return array[Math.floor(Math.random() * array.length)]
+}
+
+function getMoewEmoji() {
+	const eyes = randarr(meowFaceyEyes)
+	return eyes[0] + randarr(meowFaceyMouth) + eyes[1]
+}
+
+function getMeow() {
+	let meow = randarr(meowBegin).repeat(1 + Math.floor(Math.random() * 3))
+	let len = 3 + Math.floor(Math.random() * 6)
+	for (let i = 0; i < len; ++i) {
+		meow += randarr(meowContinuation)
+	}
+
+	len = 1 + Math.floor(Math.random() * 3)
+	for (let i = 0; i < len; ++i) {
+		meow += randarr(meowEnding)
+	}
+	return meow
+}
+
+function getThing() {
+	const i = Math.random()
+	if (i > 0.64) {
+		return getMeow()
+	}
+	if (i > 0.4) {
+		return "ny" + "a".repeat(1 + Math.floor(Math.random() * 7))
+	}
+	if (i > 0.3) {
+		return "pu" + "r".repeat(2 + Math.floor(Math.random() * 4))
+	}
+	if (i > 0.15) {
+		return randarr(emojies)
+	}
+	return getMoewEmoji()
+}
+
+function initMeow() {
+	const meowPanel = document.getElementById("meow-panel");
+	meowPanel.style.display = meowPanel.style.display === "none" ? "block" : "none";
+
+	if (meowPanel.innerHTML !== "") {
+		return
+	}
+
+	let meow = ""
+	for (let i = 0; i < 40000; ++i) {
+		meow += getThing() + ' '
+	}
+	meowPanel.innerHTML = meow;
+}
+
