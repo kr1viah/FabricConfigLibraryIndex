@@ -381,6 +381,11 @@ fun main() {
 				title {
 					+"Fabric Config Library Index"
 				}
+                link {
+                    rel = "icon"
+                    type = "image/x-icon"
+                    href = "https://fabricmc.net/assets/logo.png"
+                }
 			}
 			body {
 				style = "font-size: 13px; color: #cdd6f4; margin: 0px; display: flex; height: 100%"
@@ -476,7 +481,7 @@ fun main() {
 					}
 
 					div("panel") {
-						style = "height: fit-content; display: flex; justify-content: space-between;"
+						style = "height: fit-content; display: flex; gap: 1em; justify-content: space-between;"
 						div {
 							a {
 								href = "https://kr1v.net/libs/libs.json"
@@ -495,7 +500,7 @@ fun main() {
 						}
 
 						div {
-							style = "height: 100%; width: 80%; display: flex; flex-direction: column; justify-content: space-between; align-items: end;"
+							style = "height: 100%; flex: 1; display: flex; flex-direction: column; justify-content: space-between; align-items: end;"
 							p {
 								style = "margin: 0;"
 								+("Total libraries: " + Libraries.CONFIG_LIBRARIES().size)
