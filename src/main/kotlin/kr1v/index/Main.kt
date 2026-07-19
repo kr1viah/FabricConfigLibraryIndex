@@ -495,10 +495,16 @@ fun main() {
 						}
 
 						div {
-							style = "height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: end;"
+							style = "height: 100%; width: 80%; display: flex; flex-direction: column; justify-content: space-between; align-items: end;"
 							p {
-								style = "margin: 0"
+								style = "margin: 0;"
 								+("Total libraries: " + Libraries.CONFIG_LIBRARIES().size)
+                                br()
+                                +"The content on this website is available under the CC0 1.0 Universal license. "
+                                a {
+                                    href = "https://github.com/kr1viah/FabricConfigLibraryIndex/blob/master/README.md"
+                                    +"More info"
+                                }
 							}
 							tag(
 								"Meow!",
