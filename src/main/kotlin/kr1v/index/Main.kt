@@ -81,22 +81,15 @@ fun FlowContent.ConfigLibraryPanel(library: ConfigLibrary) {
 			// title
 			div {
 				h1 {
-					style = "display: inline-block; margin: 0;"
 					+library.name
-					+" ("
 				}
-				h2 {
-					style = "display: inline-block; margin: 0;"
+				h4 {
 					code {
 						span {
 							style = "padding: 3px;"
 							+library.id
 						}
 					}
-				}
-				h1 {
-					style = "display: inline-block; margin: 0;"
-					+")"
 				}
 
 				// dependencies
@@ -297,7 +290,8 @@ fun FlowContent.ConfigLibraryPanel(library: ConfigLibrary) {
 					style = "display: none;"
 					id = "example-config-${library.id}"
 					samp {
-						if (library.exampleConfigClass == null) {
+                        val exampleConfigClass = library.exampleConfigClass
+						if (exampleConfigClass == null) {
 							+"None yet! Contribute by providing an example "
 							a {
 								val link = "https://github.com/kr1viah/FabricConfigLibraryIndex/blob/master/src/main/java/kr1v/index/libs/" + library.javaClass.simpleName + ".java"
@@ -306,7 +300,7 @@ fun FlowContent.ConfigLibraryPanel(library: ConfigLibrary) {
 							}
 							+"."
 						} else {
-							+library.exampleConfigClass.replace("\t", "	")
+							+exampleConfigClass.replace("\t", "	")
 						}
 					}
 				}

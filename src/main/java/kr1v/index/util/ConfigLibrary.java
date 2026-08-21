@@ -1,6 +1,7 @@
 package kr1v.index.util;
 
 import org.intellij.lang.annotations.Language;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -21,8 +22,10 @@ public class ConfigLibrary {
 	public UiMethod uiMethod;
 	public List<String> notes;
 	public String source;
+	@Nullable
 	public String modrinthSlug;
 
 	@Language("java")
+	@Nullable
 	public String exampleConfigClass;
 }

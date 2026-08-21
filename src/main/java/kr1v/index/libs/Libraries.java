@@ -6,6 +6,7 @@ import com.google.gson.JsonPrimitive;
 import kr1v.index.util.ConfigLibrary;
 import kr1v.index.util.Util;
 import kr1v.index.util.Versions;
+import org.jetbrains.annotations.Nullable;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -74,6 +75,14 @@ public class Libraries {
 						.distinct()
 						.sorted(Comparator.comparingInt(Versions.ALL_LIST::indexOf))
 						.toList();
+			}
+		}
+
+		for (var lib : CONFIG_LIBRARIES()) {
+			for (var f : lib.getClass().getFields()) {
+				if (Util.get(lib, f) == null && f.getAnnotation(Nullable.class) != null) {
+					throw new IllegalStateException("Field " + f.getName() + " for library " + lib.name + " is null, but it cant be");
+				}
 			}
 		}
 	}
