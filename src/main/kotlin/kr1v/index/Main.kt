@@ -382,7 +382,7 @@ fun main() {
                 }
 			}
 			body {
-				style = "font-size: 13px; color: #cdd6f4; margin: 0px; display: flex; height: 100%"
+				style = "font-size: 18px; color: #cdd6f4; margin: 0px; display: flex; height: 100%"
 
 				div("sidebar") {
 					style = "flex: 1; display: flex; flex-direction: column; padding: 10px"
