@@ -18,7 +18,7 @@ public class OneConfig extends ConfigLibrary {
 		manualInitialization = InitMode.AT_MOD_INIT;
 		configMethod = ConfigMethod.of(ConfigMethod.TypeOfClass.EXTENDING, ConfigMethod.MemberType.STATIC, ConfigMethod.Waaa.ANNOTATED_PRIMITIVE);
 		uiMethod = UiMethod.AUTOMATIC;
-		notes = List.of("");
+		notes = List.of();
 		source = "https://github.com/Polyfrost/OneConfig";
 
 		exampleConfigClass = """
